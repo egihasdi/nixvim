@@ -33,4 +33,10 @@ in [
     action = "<cmd>Yazi<cr>";
     key = "<leader>e";
   }
+
+  {
+    mode = "n";
+    action = "<cmd>LazyGit<cr>";
+    key = "<leader>gg";
+  }
 ]

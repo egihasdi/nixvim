@@ -1,6 +1,7 @@
 { pkgs, ... }: {
 
   globals = { mapleader = " "; };
+  extraPackages = with pkgs; [ difftastic ];
   opts = {
     number = true;
     relativenumber = true;
@@ -64,5 +65,6 @@
     ./plugins/airline.nix
     ./plugins/barbecue.nix
     ./plugins/web-devicons.nix
+    ./plugins/lazygit.nix
   ];
 }
