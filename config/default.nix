@@ -1,7 +1,7 @@
 { pkgs, ... }: {
 
   globals = { mapleader = " "; };
-  extraPackages = with pkgs; [ difftastic ];
+  extraPackages = with pkgs; [ difftastic neovim-remote ];
   opts = {
     number = true;
     relativenumber = true;
@@ -62,7 +62,7 @@
     ./plugins/noice.nix
     ./plugins/treesitter.nix
     ./plugins/comment.nix
-    ./plugins/airline.nix
+    # ./plugins/airline.nix
     ./plugins/barbecue.nix
     ./plugins/web-devicons.nix
     ./plugins/lazygit.nix

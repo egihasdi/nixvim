@@ -11,4 +11,11 @@
       indent.enable = true;
     };
   };
+
+  plugins.treesitter-refactor = {
+    enable = true;
+    navigation.enable = true;
+    navigation.keymaps.gotoNextUsage = "]r";
+    navigation.keymaps.gotoPreviousUsage = "[r";
+  };
 }

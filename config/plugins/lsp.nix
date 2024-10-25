@@ -40,6 +40,12 @@
           action.__raw = "function() vim.lsp.codelens.run() end";
           options.desc = "LSP CodeLens run";
         }
+        {
+          mode = "n";
+          key = "gr";
+          action = "<cmd>Telescope lsp_references<cr>";
+          options.desc = "LSP References";
+        }
       ];
     };
 
