@@ -74,32 +74,32 @@ in {
     };
 
     # Sources tabs
-    sourceSelector = {
-      # Label position
-      contentLayout.__raw = "'center'";
-
-      # No tabs separator
-      separator = "";
-
-      # Show tabs on winbar
-      winbar = true;
-
-      # Sources to show and their labels
-      sources = [
-        {
-          displayName = "Files";
-          source = "filesystem";
-        }
-        {
-          displayName = "Bufs";
-          source = "buffers";
-        }
-        {
-          displayName = "Git";
-          source = "git_status";
-        }
-      ];
-    };
+    # sourceSelector = {
+    #   # Label position
+    #   contentLayout.__raw = "'center'";
+    #
+    #   # No tabs separator
+    #   separator = "";
+    #
+    #   # Show tabs on winbar
+    #   winbar = true;
+    #
+    #   # Sources to show and their labels
+    #   sources = [
+    #     {
+    #       displayName = "Files";
+    #       source = "filesystem";
+    #     }
+    #     {
+    #       displayName = "Bufs";
+    #       source = "buffers";
+    #     }
+    #     {
+    #       displayName = "Git";
+    #       source = "git_status";
+    #     }
+    #   ];
+    # };
     defaultComponentConfigs = {
       gitStatus.symbols = {
         added = icons.GitAdd;

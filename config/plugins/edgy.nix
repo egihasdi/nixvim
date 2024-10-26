@@ -7,6 +7,7 @@
         title = "Files";
         ft = "neo-tree";
         pinned = true;
+        wo = { winbar = false; };
       }];
     };
   };
