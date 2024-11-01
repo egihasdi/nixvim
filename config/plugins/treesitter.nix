@@ -5,6 +5,8 @@
       javascript
       typescript
       nix
+      php
+      html
     ];
     settings = {
       highlight.enable = true;

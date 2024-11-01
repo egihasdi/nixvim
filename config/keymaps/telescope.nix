@@ -17,5 +17,17 @@
     options.desc = "Buffers";
     action = "<cmd>Telescope buffers<cr>";
   }
+  {
+    mode = "n";
+    key = "<leader>fr";
+    options.desc = "References";
+    action = "<cmd>Telescope lsp_references<cr>";
+  }
+  {
+    mode = "n";
+    key = "<leader>fd";
+    options.desc = "Diagnostics";
+    action = "<cmd>Telescope lsp_diagnostics<cr>";
+  }
 
 ]

@@ -39,4 +39,14 @@ in [
     action = "<cmd>LazyGit<cr>";
     key = "<leader>gg";
   }
+  {
+    mode = "n";
+    action = "<cmd>Yazi<cr>";
+    key = "<leader>y";
+  }
+  {
+    mode = "n";
+    action = "<cmd>ZenMode<cr>";
+    key = "<leader>z";
+  }
 ]

@@ -2,6 +2,17 @@
 
   globals = { mapleader = " "; };
   extraPackages = with pkgs; [ difftastic neovim-remote ];
+  extraPlugins = [
+    (pkgs.vimUtils.buildVimPlugin {
+      name = "tree-sitter-blade";
+      src = pkgs.fetchFromGitHub {
+        owner = "EmranMR";
+        repo = "tree-sitter-blade";
+        rev = "v0.11.0";
+        hash = "sha256-PTGdsXlLoE+xlU0uWOU6LQalX4fhJ/qhpyEKmTAazLU=";
+      };
+    })
+  ];
   opts = {
     number = true;
     relativenumber = true;
@@ -66,5 +77,6 @@
     ./plugins/barbecue.nix
     ./plugins/web-devicons.nix
     ./plugins/lazygit.nix
+    ./plugins/zen-mode.nix
   ];
 }

@@ -4,8 +4,8 @@
     servers.nixd.enable = true;
     servers.biome.enable = true;
     servers.intelephense = {
-	enable = true;
-	package = null;
+      enable = true;
+      package = null;
     };
 
     servers = {
@@ -31,6 +31,12 @@
           key = "<leader>li";
           action = "<cmd>LspInfo<cr>";
           options.desc = "Show LSP info";
+        }
+        {
+          mode = "n";
+          key = "<leader>ld";
+          action.__raw = "function() vim.diagnostic.open_float() end";
+          options.desc = "Show Line Diagnostic";
         }
         {
           mode = "n";
