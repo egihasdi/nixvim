@@ -7,6 +7,8 @@
       nix
       php
       html
+      templ
+      markdown
     ];
     settings = {
       highlight.enable = true;

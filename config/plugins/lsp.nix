@@ -3,6 +3,8 @@
     enable = true;
     servers.nixd.enable = true;
     servers.biome.enable = true;
+    servers.gopls.enable = true;
+    servers.templ.enable = true;
     servers.intelephense = {
       enable = true;
       package = null;

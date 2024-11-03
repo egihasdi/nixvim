@@ -23,6 +23,7 @@
     expandtab = true;
     splitkeep = "screen";
     cmdheight = 0;
+    conceallevel = 2;
     fillchars = { eob = " "; };
     signcolumn = "yes";
     foldcolumn = "1";
@@ -50,10 +51,6 @@
     yazi = { enable = true; };
     nvim-autopairs = { enable = true; };
 
-    telescope = {
-      enable = true;
-      extensions.live-grep-args.enable = true;
-    };
     diffview = { enable = true; };
 
   };
@@ -65,7 +62,7 @@
     ./plugins/gitsigns.nix
     ./plugins/edgy.nix
     ./plugins/cmp.nix
-    ./plugins/bufferline.nix
+    # ./plugins/bufferline.nix
     ./plugins/lsp-format.nix
     ./plugins/lsp.nix
     ./plugins/navic.nix
@@ -78,5 +75,7 @@
     ./plugins/web-devicons.nix
     ./plugins/lazygit.nix
     ./plugins/zen-mode.nix
+    ./plugins/telescope.nix
+    ./plugins/obsidian.nix
   ];
 }

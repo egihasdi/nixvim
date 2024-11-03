@@ -26,10 +26,21 @@ in {
         end
       '';
     };
-    window.mappings = {
-      h = "parent_or_close";
-      l = "child_or_open";
-      F = "find_file_in_dir";
+
+    defaultComponentConfigs = {
+      indent = {
+        indentSize = 1;
+        padding = 1;
+      };
+    };
+    window = {
+      position = "left";
+      width = 180;
+      mappings = {
+        h = "parent_or_close";
+        l = "child_or_open";
+        F = "find_file_in_dir";
+      };
     };
     extraOptions = {
       open_files_do_not_replace_types = [ "terminal" "Trouble" "qf" "edgy" ];
